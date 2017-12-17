@@ -21,7 +21,7 @@ def results():
 
     return "Error"
 
-app.graph = model.load_graph('static/retrained_graph.pb') 
+app.graph = model.load_graph('static/model.pb') 
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",port=5000,debug=True,use_reloader=False)
